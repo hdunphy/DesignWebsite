@@ -17,7 +17,16 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Projects">PROJECTS <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#Others" class="w3-bar-item w3-button">Others</a>
+        <a href="#Understanding" class="w3-bar-item w3-button">Understanding</a>
+        <a href="#Tension" class="w3-bar-item w3-button">Tension</a>
+        <a href="#Wellbeing" class="w3-bar-item w3-button">Wellbeing</a>
+      </div>
+    </div>
+<!--    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>-->
     <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     <a href="../Manifesto/manifesto.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MANIFESTO</a>
@@ -34,33 +43,49 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
-
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+        <h1 class="w3-wide">Henry Dunphy's CS3041 Portfolio</h1>
+        <a href="https://www.cdm.depaul.edu/academics/Pages/MSInHuman-ComputerInteraction.aspx">
+            <img src="Manifesto/images/heroHCI.jpg" alt="HCI">
+        </a>
+        <p class="w3-opacity w3-small">https://www.cdm.depaul.edu/academics/Pages/MSInHuman-ComputerInteraction.aspx</p>
+    </div>
   <!-- The Project Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="projects">
-    <h2 class="w3-wide">PROJECTS</h2>
-      <h3 class="w3-wide">Good and Bad Design</h3>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-<!--        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">-->
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-<!--        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">-->
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-<!--        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">-->
+    <div class="w3-gray">
+      <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="projects">
+        <h2 id="Others" class="w3-wide">PROJECTS</h2>
+          <p class="w3-justify">__________________________________________________________________________________________________________________________________</p>
+          <h3 class="w3-wide">Design for Others</h3>
+          <button class="w3-button w3-black w3-margin-bottom" onclick="location.href='https://medium.com/@matticoli/design-for-others-redesigning-a-makerspace-website-to-target-tourists-27bea1b36483'">Go to Medium Post</button>
+          <p class="w3-justify">In this project, my team and I worked to redesign the <a href="http://technocopia.org/">Technocopia</a> mobile website for tourists visiting Worcester. We used adobe XD to help design the mobile webpages. In order to reach our target audience we wanted to make sure directions to the site were clear. We also wanted to include a menu for different languages in case the users were not fluent in English.</p>
+          <img src="Manifesto/images/menu.JPG" alt="Design for others" style="height: 300px">
+          <br>
+          
+          <p class="w3-justify" id="Understanding">__________________________________________________________________________________________________________________________________</p>
+          <h3 class="w3-wide">Design For Understanding</h3>
+          <button class="w3-button w3-black w3-margin-bottom" onclick="location.href='https://medium.com/@john3r8amaral/design-for-understanding-8c2c1d0eab'">Go to Medium Post</button>
+          <img src="Manifesto/images/understandingGraph.png" alt="Understanding Graphs" style="width: 80%">
+          <p class="w3-justify">In this project, my team and I split into two groups. We created graphs to dispaly the same data, but with a different purpose in mind. My group created a graph for understanding which would display the data in a clear and consise way. The design was meant to be minimalistic and display the data in a way that did not influence the user. We created a website to display our graph and used the chart.js library.</p>
+          <br>
+          
+          <p class="w3-justify" id="Tension">__________________________________________________________________________________________________________________________________</p>
+          <h3 class="w3-wide">Design For Tension</h3>
+          <button class="w3-button w3-black w3-margin-bottom" onclick="location.href='https://medium.com/@justinkreiselman/design-for-tension-13bd6d196512'">Go to Medium Post</button>
+          <p class="w3-justify">In this project, my team and I designed a chat-bot that was supposed to bring up a challenging topic. We decided to have our bot talk about artificial intelligence and the effects it could have on humanity. To create the bot we used <a href="https://flowxo.com">FlowXO</a> and connected it to our class slack channel.</p>
+          <a href="https://drive.google.com/file/d/188qZkiB__5y57x4jxyVJup3J0LcknXik/view">Here is a link to our demo video.</a>
+          <br>
+          
+          <p class="w3-justify" id="Wellbeing">__________________________________________________________________________________________________________________________________</p>
+          <h3 class="w3-wide">Design For Wellbeing</h3>
+          <button class="w3-button w3-black w3-margin-bottom" onclick="location.href='https://medium.com/@robertharrison43/design-for-well-being-c6e36c045b03'">Go to Medium Post</button>
+          <p class="w3-justify">In this project, my team and I created a game that attempted to make you happy by asking you to not laugh while we cycled through different gifs. We put this game on a website and used <a href="https://www.affectiva.com/">Affectiva</a> to determine if they laughed or not.</p>
+          
+          
       </div>
     </div>
-  </div>
     
   <!-- The About Section -->
-    <div class="w3-gray" id="about">
+<!--    <div class="w3-gray" id="about">-->
       <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="about">
         <h2 class="w3-wide w3-center">ABOUT</h2>
         <div class="w3-row w3-padding-32">
@@ -69,19 +94,22 @@ body {font-family: "Lato", sans-serif}
           </p>
         </div>
       </div>
-    </div>
+<!--    </div>-->
 
   <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> RI, US<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: hdunphy@wpi.edu<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Github: hdunphy<br>
+    <div class="w3-gray">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+            <h2 class="w3-wide w3-center">CONTACT</h2>
+            <div class="w3-row w3-padding-32">
+              <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i> Barrington, Rhode Island<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: hdunphy@wpi.edu<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Github: hdunphy<br>
+              </div>
+            </div>
       </div>
+
     </div>
-  </div>
   
 <!-- End Page Content -->
 </div>
