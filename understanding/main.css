@@ -1,0 +1,14 @@
+.checkbox{
+    background: #6FF07E;
+    border: 2px solid #6FF07E;
+    border-radius: 6px;
+    padding: 1px 5px 1px 1px;
+    margin-left: 12px;
+    margin-right: 5px;
+}
+
+.discription{
+    text-align: center;
+    font-size: 11pt;
+    font-style: italic;
+}
